@@ -61,7 +61,7 @@ Enter number: 2 (we want to predict for lunch)
 | Sweet Boondi | 413 units | OK |
 | Mixed Veg Salad | 310 units | **Make LESS** |
 | Pickle | 115 units | **Make LESS** |
-=============================================
+
      
 
 
