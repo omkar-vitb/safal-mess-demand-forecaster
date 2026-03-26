@@ -34,18 +34,19 @@ College messes often prepare a fixed quantity of food. However, actual student d
 *2. run the following command to install pandas,numpy,matplotlib and scikit-learn.*
 pip install pandas numpy scikit-learn matplotlib.
 
-*3. How to run.*
-   01-first run  generate_data.py.
-   02-run train_model.py.
-   03- run predict.pyp.
+*3. How to run:*
+- 01- First run `generate_data.py`.
+- 02- Run `train_model.py`.
+- 03- Run `predict.py`.
+.
 
 4. **Here in predict.py you have  to enter the following data:-**
-   **1.** Enter date (DD-MM-YYYY):-20-05-2026(predicting on 20 may 2026)
-   **2.** Select meal:
+  - **Step 1:** Enter date (DD-MM-YYYY): e.g., 20-05-2026.
+  - **step 2:** Select meal:
   1) Breakfast  2) Lunch  3) High Tea  4) Dinner
 Enter number: 2 (we want to predict for lunch)
-**3.** Is it exam week? (y/n): n
-**4.** Is holiday nearby? (y/n): n
+- **Step 3.** Is it exam week? (y/n): n
+- **Step 4.** Is holiday nearby? (y/n): n
 
 **5.** The following table will be created which will help mess staff to know how much food need to be prepared.
 ============================================= 
