@@ -52,15 +52,15 @@ Enter number: 2 (we want to predict for lunch)
 ============================================= 
   Predicted Demand — Lunch (Wednesday)        
 ============================================= 
-  Item                    Predicted  Advice   
-  ------------------------------------------  
-  Rajma                    1455 units   OK
-  Dal Tadka                1447 units   OK
-  Roti                     1454 units   OK
-  Mutter Pulao             1194 units   OK
-  Sweet Boondi              413 units   OK
-  Mixed Veg Salad           310 units   Make LESS
-  Pickle                    115 units   Make LESS
+  | Item | Predicted | Advice |
+| :--- | :--- | :--- |
+| Rajma | 1455 units | OK |
+| Dal Tadka | 1447 units | OK |
+| Roti | 1454 units | OK |
+| Mutter Pulao | 1194 units | OK |
+| Sweet Boondi | 413 units | OK |
+| Mixed Veg Salad | 310 units | **Make LESS** |
+| Pickle | 115 units | **Make LESS** |
 =============================================
      
 
