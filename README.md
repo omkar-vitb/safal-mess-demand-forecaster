@@ -16,6 +16,8 @@ College messes often prepare a fixed quantity of food. However, actual student d
 ## ORIGINAL MESS MENU ON WHICH DATA HAS BEEN GENERATED AND TRAINED 
 ![mess_menu](https://github.com/user-attachments/assets/80ba26db-9dd5-40d8-bbf9-64f533e452e7)
 
+## HOLIDAYS DATA HAS BEEN TAKEN FROM ACADEMIC CALENDER OF VIT BHOPAL
+
 
 ## Features that has been added in the project.
 1.  **Data Generator (`01-generate_data.py`)** **Due to lack of original data ,i have generated data by myself(in the file 01-generate_data.py) keeping the original menu of the mess in mind.**  
