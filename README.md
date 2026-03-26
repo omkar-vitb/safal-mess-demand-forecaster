@@ -34,7 +34,7 @@ College messes often prepare a fixed quantity of food. However, actual student d
 *2. run the following command to install pandas,numpy,matplotlib and scikit-learn.*
 pip install pandas numpy scikit-learn matplotlib.
 
-3. How to run.
+*3. How to run*
    01-first run  generate_data.py.
    02-run train_model.py.
    03- run predict.pyp.
