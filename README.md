@@ -29,15 +29,15 @@ College messes often prepare a fixed quantity of food. However, actual student d
 ## Setup & Installation
 
 *1. Clone the repository:*
-   git clone-> https://github.com/omkar-vitb/safal-mess-demand-forecaster.git
+   git clone-> https://github.com/omkar-vitb/safal-mess-demand-forecaster.git.
 
 *2. run the following command to install pandas,numpy,matplotlib and scikit-learn.*
-pip install pandas numpy scikit-learn matplotlib
+pip install pandas numpy scikit-learn matplotlib.
 
-3. How to run
-   01-first run  generate_data.py
-   02-run train_model.py
-   03- run predict.pyp
+3. How to run.
+   01-first run  generate_data.py.
+   02-run train_model.py.
+   03- run predict.pyp.
 
 4. **Here in predict.py you have  to enter the following data:-**
    **1.** Enter date (DD-MM-YYYY):-20-05-2026(predicting on 20 may 2026)
