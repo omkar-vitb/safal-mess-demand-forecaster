@@ -21,8 +21,8 @@ College messes often prepare a fixed quantity of food. However, actual student d
 
 ## Features that has been added in the project.
 1.  **Data Generator (`01-generate_data.py`)** **Due to lack of original data ,i have generated data by myself(in the file 01-generate_data.py) keeping the original menu of the mess in mind.**  
-2.  **Model Trainer (`train_model.py`):** trained on Linear Regressor and Random forest .
-3.  **Interactive Predictor (`predict.py`):** here mess staff can enter the day and few other factors like Is it exam week? or Is holiday nearby? and other factors that can influence the food consumption which will help them to predict how much quantity of food needs to be prepared.
+2.  **Model Trainer (`02-train_model.py`):** trained on Linear Regressor and Random forest .
+3.  **Interactive Predictor (`03-predict.py`):** here mess staff can enter the day and few other factors like Is it exam week? or Is holiday nearby? and other factors that can influence the food consumption which will help them to predict how much quantity of food needs to be prepared.
 
 ## Tech Stack
 * **Language:** Python
