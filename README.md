@@ -5,7 +5,7 @@ The **Safal Mess Demand Forecaster** is an machine learning project made by me t
 
 
 ## The Problem
-College messes often prepare a fixed quantity of food. However, actual student demand fluctuates wildly based on factors like:
+College messes often prepare a fixed quantity of food. However, actual  demand fluctuates wildly based on factors like:
 * **Menu Items:** (eg.biryani is consumed much more while bhindi is consumed less but mess staff kepps making same amount of food everyday that leads to wastage of lot of food.)
 * **Time of Year:** Demand drops during holidays or when many students go home due to any special occasions like wedding seasons or if many student exams got over early because of **FFCS** system here at VIT BHOPAL.
 * **Exam time:** Demand dips slightly during exam weeks as students skip meals or eat lightly.
