@@ -17,27 +17,29 @@ So there are many factors which influences the consumption of food and it leads 
 ## 2. Significance of the Problem
 
 Solving this problem is highly relevant as it will help to reduce wastage of food by a significant margin and this will also help financially to the institution.
+And it is not the problem only for institutuion but most of the places it could be for restaurant,gurudwaras(where they feed people on daily basis in langar.
+There also consumption would vary on different factors so a similar kind of model could be trained for such places to reduce the wastage of food and help these places financially. 
 
 ## 3. Methodology & Approach
 
 To solve this, I built a three-stage machine learning pipeline:
 
-- **Phase 1: Data Synthesis:** Because real historical logs were unavailable, I programmed a data generator (`01-generate_data.py`) grounded in real-world observations. I created a base schedule for 500 days, mapping the actual menu of Safal Mess. I applied demand modifiers based on the days of the week,exam periods, holidays, and weekends. Natural daily noise was also added for realism.
+- **Phase 1: Data Synthesis:** Because real historical logs were unavailable, I programmed a data generator (`01-generate_data.py`) on the basis of my personal observations that which item is consumed more and which is consumed less. I created a base schedule for 500 days(based on my academic calender for holidays and exams schedule), mapping the actual menu of Safal Mess. I applied demand modifiers based on the days of the week,exam periods, holidays, and weekends. Natural daily noise was also added for realism.
+![mess_menu](https://github.com/user-attachments/assets/8c4cfc4e-7589-4fe5-8957-040ed2518156)
+
 - **Phase 2: Model Training:** I used `pandas` to manage the dataset and `scikit-learn` for preprocessing, applying `LabelEncoder` to convert categorical text (days, meals, categories) into numerical features. I trained two models—Linear Regression and a Random Forest Regressor. Random Forest was chosen as the primary model to capture the non-linear relationships between holidays, item types, and demand.
-- **Phase 3: Deployment & Interaction:** I serialized the trained model and encoders using `pickle`. I then built an interactive Command Line Interface (`03-predict.py`) that allows mess staff to input a date and meal type, outputting exact unit predictions and give advice (e.g., "Make LESS", "OK").
+- **Phase 3: Deployment & Interaction:** I  trained model and encoders using `pickle`. I then built an Command Line Interface (`03-predict.py`) that allows mess staff to input a date and meal type, outputting exact unit predictions and give advice (e.g., "Make LESS", "OK").And to make it more interactive, with the help of html,css and flask i made an interactive ui so it can be used by anyone including non-technical persons.
+<img width="694" height="879" alt="Screenshot 2026-03-27 180520" src="https://github.com/user-attachments/assets/0e1555dc-0ef0-46b2-b527-a282927a7eb0" />
+
 
 ## 4. Key Decisions and Challenges Faced
 
-- **Challenge: Lack of Real Data:** The biggest hurdle was the absence of historical mess logs.
-- **Decision:** I decided to programmatically generate synthetic data. Ensuring this data wasn't too "perfect" was a challenge. I solved this by injecting random mathematical noise and programming strict logical constraints (e.g., scaling demand down explicitly during dates overlapping with known holidays or campus events).
+- **Challenge: Lack of Real Data:** The biggest hurdle was the absence of historical mess data.
+- **Decision:** I decided to programmarically generate synthetic data based on my personal observation. 
 - **Challenge: Handling Categorical Data:** Machine learning models require numbers, but my data consisted of text strings like "Breakfast" or "South Indian".
-- **Decision:** I implemented Label Encoding to transform these strings into integers. I had to carefully export these encoders alongside the model using a Python dictionary and `pickle` so that the prediction script could interpret new user inputs correctly.
+- **Decision:** I implemented Label Encoding to transform these strings into integers.
 
 ## 5. What I Learned
 
-This project pushed me beyond my regular learning and prompted me to make something useful which could be implemented in real world and can be useful and i also learn many things like:
+This project pushed me beyond my regular learning and make something that could solve a real world challenge. I learnt these libraries like scikit-learn a long ago but never implemented in real life world but with this peoject i learnt to use my knowledge and implement to solve some real-life world problems.
 
-1. Translating human observations into programmatic, rule-based data generation.
-2. Understanding the importance of feature engineering and how drastically it affects model accuracy.
-3. Structuring a Machine Learning project into modular scripts (Generate -> Train -> Predict) rather than a single, messy file.
-4. Designing a user-friendly terminal interface to make Python code usable for a non-technical end-user.
