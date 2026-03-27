@@ -25,8 +25,8 @@ College messes often prepare a fixed quantity of food. However, actual student d
 3.  **Interactive Predictor (`03-predict.py`):** here mess staff can enter the day and few other factors like Is it exam week? or Is holiday nearby? and other factors that can influence the food consumption which will help them to predict how much quantity of food needs to be prepared.
 
 ## Tech Stack
-* **Language:** Python
-* **Libraries:** `pandas`, `numpy`, `scikit-learn`, `matplotlib`
+* **Language:** Python,html,css
+* **Libraries:** `pandas`, `numpy`, `scikit-learn`, `matplotlib`,flask.
 
 ## Setup & Installation
 
@@ -40,6 +40,7 @@ pip install pandas numpy scikit-learn matplotlib.
 - 01- First run `generate_data.py`.
 - 02- Run `train_model.py`.
 - 03- Run `predict.py`.
+- 04- run app.py
 .
 
 *4.* **Here in predict.py you have  to enter the following data:-**
