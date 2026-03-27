@@ -50,7 +50,7 @@ pip install pandas numpy scikit-learn matplotlib.
 - 04- run app.py
 .
 
-*4.* **Here in predict.py you have  to enter the following data:-**
+*4.* **Here in predict.py one needs to enter the following data:-**
   - **Step 1:** Enter date (DD-MM-YYYY): e.g., 20-05-2026.
   - **step 2:** Select meal:
   1) Breakfast  2) Lunch  3) High Tea  4) Dinner
