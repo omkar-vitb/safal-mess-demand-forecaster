@@ -1,7 +1,7 @@
 # Safal Mess Demand Forecaster 
 
 ## Overview
-The **Safal Mess Demand Forecaster** is an machine learning project made by me to solve the food wastage in mess in day to day life. .
+The **Safal Mess Demand Forecaster** is an machine learning project made by me to solve the food wastage problem in mess in day to day life. .
 
 
 ## The Problem
