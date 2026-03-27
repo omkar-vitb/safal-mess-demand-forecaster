@@ -1,10 +1,11 @@
 # Project Report: Safal Mess Demand Forecaster
-
-## **Course:** [Fundamentals of AI and ML]
+**Name:-omkar kumar**
+**registration number:-25BAI10893**
+**project title:-Safal-Mess-Demans-Forecaster**
 
 ## 1. Problem Statement
 
-Large-scale institutional cafeterias, such as a college mess, struggle with severe food wastage and financial inefficiency due to unpredictable daily demand. Safal Mess caters to approximately 2,000 students, but the daily consumption of food items fluctuates heavily.These can vary fluctuate based on which meal is provided, which day it is, are any exam nearby , or is it holiday and many more.But mess staff keeps preparing same amount of food everyday that results to wastage of food.To solve this problem i made a machine learning model which will evaluate all these criteria and could suggest mess staff whether how much foof should be prepared on a particular day .
+
 
 ## 2. Significance of the Problem
 
