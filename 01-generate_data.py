@@ -1,7 +1,7 @@
 """
 this is not real data this has been created by me but it could be implemented with real data and can be used by safal mess .
 
-based on observation:-
+based on my personal observation:-
 - 2000 students total, mostly north indian
 - south indian items: consumed by ~15-20% students only as most students are north indian so south indian items are consumed by only ~15-20% students only
 - bread/butter/jam: ~25% (as this is because this is not the main item for breakfast this is just served for those who dont want to eat that main items for breakfast )
