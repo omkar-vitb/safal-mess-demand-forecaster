@@ -61,8 +61,8 @@ Enter number: 2 (we want to predict for lunch)
 | Sweet Boondi | 413 units | OK |
 | Mixed Veg Salad | 310 units | **Make LESS** |
 | Pickle | 115 units | **Make LESS** |
-And to make it more interactive, with the help of html,css and flask i made an interactive ui so it can be used by anyone including non-technical persons.
 
+**And to make it more interactive, with the help of html,css and flask i made an interactive ui so it can be used by anyone including non-technical persons.**
 <img width="679" height="886" alt="Screenshot 2026-03-27 185703" src="https://github.com/user-attachments/assets/dc06525f-e0e7-46de-a3b7-ffad3cd84959" />
 
 
