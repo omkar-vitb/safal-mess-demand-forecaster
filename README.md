@@ -6,11 +6,10 @@ The **Safal Mess Demand Forecaster** is an machine learning project made by me t
 
 ## The Problem
 College messes often prepare a fixed quantity of food. However, actual  demand fluctuates wildly based on factors like:
-* **Menu Items:** (eg.biryani is consumed much more while bhindi is consumed less but mess staff kepps making same amount of food everyday that leads to wastage of lot of food.)
+* **Menu Items:** (eg.biryani is consumed much more while bhindi is consumed less but mess staff kepps making same amount of food everyday that leads to wastage of food.)
 * **Time of Year:** Demand drops during holidays or when many students go home due to any special occasions like wedding seasons or if many student exams got over early because of **FFCS** system here at VIT BHOPAL.
 * **Exam time:** Demand dips slightly during exam weeks as students skip meals or eat lightly.
-* **Weekends:** demand spikes as special meals are given on weekends like chole bature and birtani.But on the other part many student generally prefere to skip the meals in the breakfast they like to sleep late.
-
+* **Weekends:** demand spikes as special meals are given on weekends like chole bature and biryani. 
 **So there are many factors which influences the consumption of food and it leads to a lot of food wastages on a daily basis so i trained a model by keeping all these criteria into mind and trained a model to predict the consumption of food on a particular day.The aim of the project is to reduce the wastage of food by a high margin.**
 
 ## ORIGINAL MESS MENU ON WHICH DATA HAS BEEN GENERATED AND TRAINED 
