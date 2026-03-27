@@ -44,10 +44,10 @@ College messes often prepare a fixed quantity of food. However, actual  demand f
 pip install pandas numpy scikit-learn matplotlib.
 
 *3. How to run:*
-- 01- First run `generate_data.py`.
-- 02- Run `train_model.py`.
-- 03- Run `predict.py`.
-- 04- run app.py
+- 01- First run `01-generate_data.py`.
+- 02- Run `02-train_model.py`.
+- 03- Run `03-predict.py`.
+- 04- run '04-app.py'.
 .
 
 *4.* **Here in predict.py one needs to enter the following data:-**
