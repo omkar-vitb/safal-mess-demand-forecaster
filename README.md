@@ -72,7 +72,7 @@ Enter number: 2 (we want to predict for lunch)
 | Mixed Veg Salad | 310 units | **Make LESS** |
 | Pickle | 115 units | **Make LESS** |
 
-**And finally to make it more interactive i used html,css and flask to make this interactive so anyone whether the personal is technical or non-technical can use it easily** 
+**And finally to make it more interactive i used html,css and flask to make this interactive so anyone whether the person is technical or non-technical can use it easily** 
 
 <img width="679" height="886" alt="Screenshot 2026-03-27 185703" src="https://github.com/user-attachments/assets/2616d9a5-8275-4651-abe4-af6fdd406c93" />
 
