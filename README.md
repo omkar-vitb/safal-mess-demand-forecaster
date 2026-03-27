@@ -74,7 +74,8 @@ Enter number: 2 (we want to predict for lunch)
 
 **And finally to make it more interactive i used html,css and flask to make this interactive so anyone whether the personal is technical or non-technical can use it easily** 
 
-<img width="694" height="879" alt="Screenshot 2026-03-27 180520" src="https://github.com/user-attachments/assets/9f2374e5-62c5-43c0-be9c-7ab9f95c0f15" />
+<img width="679" height="886" alt="Screenshot 2026-03-27 185703" src="https://github.com/user-attachments/assets/2616d9a5-8275-4651-abe4-af6fdd406c93" />
+
 
      
 
