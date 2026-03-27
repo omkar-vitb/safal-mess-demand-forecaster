@@ -16,6 +16,14 @@ College messes often prepare a fixed quantity of food. However, actual  demand f
 ![mess_menu](https://github.com/user-attachments/assets/80ba26db-9dd5-40d8-bbf9-64f533e452e7)
 
 ## HOLIDAYS DATA HAS BEEN TAKEN FROM ACADEMIC CALENDER OF VIT BHOPAL
+<img width="1842" height="845" alt="Screenshot 2026-03-25 144925" src="https://github.com/user-attachments/assets/083d3606-0272-4fed-a99b-0057d020d3eb" />
+<img width="1836" height="811" alt="Screenshot 2026-03-25 144939" src="https://github.com/user-attachments/assets/1382cd12-4093-4d74-affe-7d0042675ff5" />
+<img width="1848" height="846" alt="Screenshot 2026-03-25 144955" src="https://github.com/user-attachments/assets/a066671b-cb44-423a-a768-d7cfea1d947c" />
+<img width="1849" height="865" alt="Screenshot 2026-03-25 145010" src="https://github.com/user-attachments/assets/d7f5d4bb-84f8-4205-a372-56e05a7a78cb" />
+<img width="1855" height="844" alt="Screenshot 2026-03-25 145020" src="https://github.com/user-attachments/assets/31ebfc0b-d36e-4a17-8a45-3879b41ae500" />
+<img width="1855" height="833" alt="Screenshot 2026-03-25 145034" src="https://github.com/user-attachments/assets/99f55a2d-f056-478a-bce9-ec3ccef4aa52" />
+<img width="1837" height="829" alt="Screenshot 2026-03-25 145121" src="https://github.com/user-attachments/assets/d46ae871-4eb4-48a2-a74e-17bd227b41c2" />
+
 
 
 ## Features that has been added in the project.
