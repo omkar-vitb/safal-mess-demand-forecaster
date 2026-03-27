@@ -27,9 +27,23 @@ To solve this, I built a three-stage machine learning pipeline:
 - **Phase 1: Data Synthesis:** Because real historical logs were unavailable, I programmed a data generator (`01-generate_data.py`) on the basis of my personal observations that which item is consumed more and which is consumed less. I created a base schedule for 500 days(based on my academic calender for holidays and exams schedule), mapping the actual menu of Safal Mess. I applied demand modifiers based on the days of the week,exam periods, holidays, and weekends. Natural daily noise was also added for realism.
 ![mess_menu](https://github.com/user-attachments/assets/8c4cfc4e-7589-4fe5-8957-040ed2518156)
 
+**And holidays and exams data has been taken from vit bhopal academic calender considering original data**
+<img width="1842" height="845" alt="Screenshot 2026-03-25 144925" src="https://github.com/user-attachments/assets/e4ba0858-09c9-4081-a697-2d9807a833ed" />
+<img width="1836" height="811" alt="Screenshot 2026-03-25 144939" src="https://github.com/user-attachments/assets/d8e10f85-9832-4a08-8721-1b7025bf83e7" />
+<img width="1848" height="846" alt="Screenshot 2026-03-25 144955" src="https://github.com/user-attachments/assets/9513feb6-8218-460c-ac74-7d6f34b5a279" />
+<img width="1849" height="865" alt="Screenshot 2026-03-25 145010" src="https://github.com/user-attachments/assets/5f87c376-414b-42fd-a0ce-c190a599e8ad" />
+<img width="1855" height="844" alt="Screenshot 2026-03-25 145020" src="https://github.com/user-attachments/assets/90c78fc0-1eae-4afb-a70b-2edf6d7e33f9" />
+<img width="1855" height="833" alt="Screenshot 2026-03-25 145034" src="https://github.com/user-attachments/assets/7478506e-8d68-4bec-86e1-6b4ba254c612" />
+<img width="1837" height="829" alt="Screenshot 2026-03-25 145121" src="https://github.com/user-attachments/assets/47e91072-bd5d-4674-b7d1-df18f32cffd7" />
+
+
 - **Phase 2: Model Training:** I used `pandas` to manage the dataset and `scikit-learn` for preprocessing, applying `LabelEncoder` to convert categorical text (days, meals, categories) into numerical features. I trained two models—Linear Regression and a Random Forest Regressor. Random Forest was chosen as the primary model to capture the non-linear relationships between holidays, item types, and demand.
-- **Phase 3: Deployment & Interaction:** I  trained model and encoders using `pickle`. I then built an Command Line Interface (`03-predict.py`) that allows mess staff to input a date and meal type, outputting exact unit predictions and give advice (e.g., "Make LESS", "OK").And to make it more interactive, with the help of html,css and flask i made an interactive ui so it can be used by anyone including non-technical persons.
-<img width="694" height="879" alt="Screenshot 2026-03-27 180520" src="https://github.com/user-attachments/assets/0e1555dc-0ef0-46b2-b527-a282927a7eb0" />
+- 
+- **Phase 3: Deployment & Interaction:** I  trained model and encoders using `pickle`. I then built an Command Line Interface (`03-predict.py`) that allows mess staff to input a date and meal type, outputting exact unit predictions and give advice (e.g., "Make LESS", "OK").
+
+And to make it more interactive, with the help of html,css and flask i made an interactive ui so it can be used by anyone including non-technical persons.
+
+<img width="679" height="886" alt="Screenshot 2026-03-27 185703" src="https://github.com/user-attachments/assets/dc06525f-e0e7-46de-a3b7-ffad3cd84959" />
 
 
 ## 4. Key Decisions and Challenges Faced
