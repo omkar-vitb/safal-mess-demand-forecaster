@@ -58,7 +58,7 @@ Enter number: 2 (we want to predict for lunch)
 - **Step 3.** Is it exam week? (y/n): n
 - **Step 4.** Is holiday nearby? (y/n): n
 
-**5.** The following table will be created which will help mess staff to know how much food need to be prepared.
+**5.** The following table will be created which will help mess staff to know how much food needs to be prepared.
 ============================================= 
   Predicted Demand — Lunch (Wednesday)        
 ============================================= 
