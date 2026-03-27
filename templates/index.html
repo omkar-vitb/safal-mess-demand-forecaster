@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>safal Mess — demand predictor</title>
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: #f0f4f8;
+        min-height: 100vh;
+        padding: 30px 16px;
+      }
+      .container {
+        max-width: 720px;
+        margin: 0 auto;
+      }
+      .header {
+        background: linear-gradient(135deg, #1a1a2e, #16213e);
+        color: white;
+        border-radius: 16px;
+        padding: 28px 32px;
+        margin-bottom: 24px;
+      }
+      .header h1 {
+        font-size: 1.6rem;
+        font-weight: 700;
+      }
+      .header p {
+        margin-top: 6px;
+        color: #94a3b8;
+        font-size: 0.9rem;
+      }
+      .card {
+        background: white;
+        border-radius: 16px;
+        padding: 28px 32px;
+        box-shadow: 0 2px 12px rgba(0, 0, 0, 0.07);
+        margin-bottom: 24px;
+      }
+      .card h2 {
+        font-size: 1rem;
+        font-weight: 600;
+        color: #374151;
+        margin-bottom: 20px;
+        text-transform: uppercase;
+        letter-spacing: 0.05em;
+      }
+      .form-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 16px;
+      }
+      .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 6px;
+      }
+      .form-group label {
+        font-size: 0.82rem;
+        font-weight: 600;
+        color: #6b7280;
+        text-transform: uppercase;
+      }
+      .form-group input,
+      .form-group select {
+        padding: 10px 14px;
+        border: 1.5px solid #e5e7eb;
+        border-radius: 10px;
+        outline: none;
+      }
+      .btn {
+        width: 100%;
+        padding: 13px;
+        margin-top: 20px;
+        background: linear-gradient(135deg, #6366f1, #8b5cf6);
+        color: white;
+        border: none;
+        border-radius: 12px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+      }
+      .toggle-row {
+        display: flex;
+        gap: 16px;
+        margin-top: 10px;
+      }
+      .toggle-label {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        cursor: pointer;
+        padding: 10px;
+        border: 1.5px solid #e5e7eb;
+        border-radius: 10px;
+        flex: 1;
+      }
+      .toggle-text {
+        font-size: 0.9rem;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th {
+        text-align: left;
+        color: #9ca3af;
+        font-size: 0.8rem;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #eee;
+      }
+      td {
+        padding: 12px 0;
+        border-bottom: 1px solid #f9f9f9;
+      }
+      .badge {
+        padding: 4px 8px;
+        border-radius: 12px;
+        font-size: 0.8rem;
+        font-weight: 600;
+      }
+      .badge-more {
+        background: #fef3c7;
+        color: #b45309;
+      }
+      .badge-ok {
+        background: #d1fae5;
+        color: #065f46;
+      }
+      .badge-less {
+        background: #fee2e2;
+        color: #991b1b;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>🍽️ Safal Mess — Demand Predictor</h1>
+        <p>ML-powered food demand forecasting for mess staff</p>
+      </div>
+
+      <div class="card">
+        <h2>Enter Details</h2>
+        <form method="POST">
+          <div class="form-grid">
+            <div class="form-group">
+              <label>Date</label>
+              <input type="date" name="date" required />
+            </div>
+            <div class="form-group">
+              <label>Meal</label>
+              <select name="meal">
+                {% for meal in meals %}
+                <option value="{{ meal }}">{{ meal }}</option>
+                {% endfor %}
+              </select>
+            </div>
+          </div>
+
+          <div class="form-group" style="margin-top: 16px">
+            <label>Special Conditions</label>
+            <div class="toggle-row">
+              <label class="toggle-label">
+                <input type="checkbox" name="exam_week" />
+                <span class="toggle-text">📚 Exam Week</span>
+              </label>
+              <label class="toggle-label">
+                <input type="checkbox" name="holiday" />
+                <span class="toggle-text">🏖️ Holiday Nearby</span>
+              </label>
+            </div>
+          </div>
+
+          <button class="btn" type="submit">Predict Demand →</button>
+        </form>
+      </div>
+
+      {% if results %}
+      <div class="card">
+        <h2>Predicted Demand</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Item</th>
+              <th>Predicted</th>
+              <th>Advice</th>
+            </tr>
+          </thead>
+          <tbody>
+            {% for r in results %}
+            <tr>
+              <td><strong>{{ r.item }}</strong></td>
+              <td>{{ r.pred }} units</td>
+              <td>
+                <span class="badge badge-{{ r.badge }}">{{ r.advice }}</span>
+              </td>
+            </tr>
+            {% endfor %}
+          </tbody>
+        </table>
+      </div>
+      {% endif %}
+    </div>
+  </body>
+</html>
