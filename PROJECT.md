@@ -40,7 +40,27 @@ To solve this, I built a three-stage machine learning pipeline:
 - **Phase 2: Model Training:** I used `pandas` to manage the dataset and `scikit-learn` for preprocessing, applying `LabelEncoder` to convert categorical text (days, meals, categories) into numerical features. I trained two models—Linear Regression and a Random Forest Regressor. Random Forest was chosen as the primary model to capture the non-linear relationships between holidays, item types, and demand.
 - 
 - **Phase 3: Deployment & Interaction:** I  trained model and encoders using `pickle`. I then built an Command Line Interface (`03-predict.py`) that allows mess staff to input a date and meal type, outputting exact unit predictions and give advice (e.g., "Make LESS", "OK").
+ **Here in predict.py one needs to enter the following data:-**
+  - **Step 1:** Enter date (DD-MM-YYYY): e.g., 20-05-2026.
+  - **step 2:** Select meal:
+  1) Breakfast  2) Lunch  3) High Tea  4) Dinner
+Enter number: 2 (we want to predict for lunch)
+- **Step 3.** Is it exam week? (y/n): n
+- **Step 4.** Is holiday nearby? (y/n): n
 
+** The following table will be created which will help mess staff to know how much food need to be prepared.
+============================================= 
+  Predicted Demand — Lunch (Wednesday)        
+============================================= 
+  | Item | Predicted | Advice |
+| :--- | :--- | :--- |
+| Rajma | 1455 units | OK |
+| Dal Tadka | 1447 units | OK |
+| Roti | 1454 units | OK |
+| Mutter Pulao | 1194 units | OK |
+| Sweet Boondi | 413 units | OK |
+| Mixed Veg Salad | 310 units | **Make LESS** |
+| Pickle | 115 units | **Make LESS** |
 And to make it more interactive, with the help of html,css and flask i made an interactive ui so it can be used by anyone including non-technical persons.
 
 <img width="679" height="886" alt="Screenshot 2026-03-27 185703" src="https://github.com/user-attachments/assets/dc06525f-e0e7-46de-a3b7-ffad3cd84959" />
