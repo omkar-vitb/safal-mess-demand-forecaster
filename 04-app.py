@@ -6,7 +6,6 @@ import os
 
 app = Flask(__name__)
 
-
 MODEL_PATH = "models/safal_model.pkl"
 
 if os.path.exists(MODEL_PATH):
@@ -121,7 +120,7 @@ def index():
             )
             fill_pct = round((pred / qty_made) * 100, 1)
             
-            # Advice Logic
+       
             if fill_pct >= 90:
                 advice, badge = "Make More", "more"
             elif fill_pct >= 50:
@@ -138,10 +137,10 @@ def index():
                 "badge":    badge,
             })
 
-        # Sort results by predicted demand (highest first)
+        
         results.sort(key=lambda x: x["pred"], reverse=True)
 
-    # CRITICAL: Ensure your file is named index.html inside the templates/ folder
+
     return render_template("index.html",
                            results=results,
                            form_data=form_data,
